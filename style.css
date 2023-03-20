@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+nav {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 8px 32px 0 rgba(75, 75, 75, 0.37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar_logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar_links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar_links li {
+    margin-left: 20px;
+}
+
+.navbar_links li a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar_hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar_hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero {
+    background-image: url('./images/playpro.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #e79701;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar_links {
+        display: none;
+    }
+
+    .navbar_hamburger {
+        display: block;
+    }
+}
