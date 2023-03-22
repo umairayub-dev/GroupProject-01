@@ -1,0 +1,33 @@
+* {
+    box-sizing: 0px;
+}
+
+.seprator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Main-Container {
+    background-color: #5078f2;
+    background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+    /* color: aliceblue; */
+    width: 100%;
+    height: 800px;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+}
+
+.product {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 7px 9px 9px;
+}
