@@ -324,6 +324,85 @@ footer {
     font-size: 0.9rem;
 }    
 
+/* gaming Accessories */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.sec{
+    background: linear-gradient();
+}
+    .main-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    .gadgets-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .gadgets-card{
+        flex-basis: calc(25% - 20px);
+        margin-bottom: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5PX;
+        overflow: hidden;
+        transition: all 0.3s ease;  
+    }
+    .gadgets-card:hover {
+        transform: translate(5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .gadgets-card img{
+        width: 100%;
+        height: 200px;
+        object-fit: calc(15% - 20PX);
+    }
+    @media (max-width: 768px)  {
+      .gadgets-card{
+        flex-basis: calc(50% - 20px);
+      }  
+    }
+    .btn-view-all {
+        text-decoration: none;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid rgba(37, 37, 37, 0.212);
+        color: rgb(251, 248, 248);
+        transition: all 0.3s ease;
+
+    }
+
+    .btn-view-all:hover {
+        background-color: black;
+        color: white;
+        transform: translate(5px);
+    }
+    .div-2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    h3{
+        margin: 15px;
+        color: aliceblue;
+    }
+    p{
+        margin: 15px;
+        font-size: large;
+        color: rgb(135, 126, 126);
+    }
+    .sec{
+        background-color: rgb(56, 53, 53);
+    }
+    .heading{
+        color: aliceblue;
+    }
 /* 320px — 480px: Mobile devices. */
 
 @media (min-width: 320px) and (max-width: 540px) {
