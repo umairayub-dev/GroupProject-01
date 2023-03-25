@@ -340,6 +340,10 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    .hero {
+        background-image: url(./images/917971-sm.jpg);
+    }
+    
     .allGames .row {
         grid-template-columns: 1fr;
     }
