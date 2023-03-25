@@ -9,6 +9,31 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+     <header>
+        <div class="navbar_logo">
+            <a href="#">GamesX</a>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </label>
+            <ul class="navbar_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="AllGamesPage.html">Games</a></li>
+                <li><a href="gadgets.html">Accessories</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
     <main>
         <section data-aos="zoom-down" class="sec">
             <div class="main-container">
@@ -29,6 +54,48 @@
             </div>
         </section>
     </main>
+    <footer data-aos="fade-right">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>We are an online game store that offers a wide selection of games for all platforms.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+                    <li><a href="mailto:contact@example.com">contact@example.com</a></li>
+                    <li>
+                        <address>
+                            123 Main St<br>
+                            Anytown, USA 12345
+                        </address>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Game Store. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init()
