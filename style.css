@@ -7,11 +7,6 @@
     outline: none;
 }
 
-body,
-html {
-    height: 100%;
-}
-
 body {
     background-color: rgb(230, 230, 230);
     font-family: "Poppins", sans-serif;
@@ -19,8 +14,8 @@ body {
 
 header {
     border: 1px solid rgba(255, 255, 255, 0.048);
-    background-color: rgba(63, 63, 63, 0.178);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.267);
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.10);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -36,11 +31,9 @@ header {
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 .navbar_logo a {
     font-size: 2rem;
     font-weight: bold;
@@ -80,10 +73,8 @@ section {
 
 .hero {
     background-image: url('./images/playpro.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -148,7 +139,6 @@ section {
     color: white;
     transform: translate(5px);
 }
-
 .game-list {
     display: flex;
     flex-wrap: wrap;
@@ -176,252 +166,20 @@ section {
     object-fit: cover;
 }
 
-.hiring {
-    padding: 30px;
-}
-
-.hiring .container {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 50%;
-}
-
-.hiring_content {
-    flex: 1 1 50%;
-    display: flex;
-    align-items: center
-}
-
-.hiring_content-inner {
-    max-width: 620px;
-    margin: 0 auto;
-    text-align: center;
-    flex-grow: 1;
-    padding: 80px 16px 0
-}
-
-.hiring_content-inner h2 {
-    font-size: 1.875rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #0a0a0a;
-    margin-bottom: 1.5rem
-}
-
-.hiring_jobs {
-    display: flex;
-    margin-bottom: 40px
-}
-
-.hiring_jobs_count {
-    display: block;
-    position: relative;
-    flex: 1 1 260px;
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(173, 172, 170, .2);
-    border-radius: 8px;
-    font-size: 1.125rem;
-    line-height: 1.2;
-    font-weight: 700;
-    color: #656462
-}
-
-.hiring_jobs_count span {
-    display: block;
-    color: #0a0a0a;
-    font-size: 3.75rem;
-    font-weight: 700
-}
-
-.hiring_image {
-    flex: 1 1 55%;
-}
-
-.hiring_image img,
-.hiring_image picture {
-    width: 100%;
-    height: 100%;
-    max-height: 600px;
-    object-fit: cover
-}
-
-.floating-action {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    border-radius: 50%;
-    background-color: limegreen;
-    padding: 15px;
-    color: #fff;
-}
-
-@media screen and (min-width: 960px) {
-    .hiring_image {
-        -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .hiring {
-        display: flex;
-    }
-
-    .hiring_content-inner {
-        margin: 0 0 0 auto;
-        padding: 80px 30px
-    }
-
-    .hiring_jobs_count {
-        font-size: 1.563rem;
-        padding: 20px
-    }
-
-    .hiring_jobs_count:first-child {
-        margin-right: 24px
-    }
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.footer-col {
-    flex-basis: 30%;
-    margin-bottom: 30px;
-}
-
-.footer-col h3 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.footer-col ul {
-    padding: 0;
-}
-
-.footer-col ul li a {
-    color: #e2e2e2;
-}
-
-.footer-bottom {
-    width: 100%;
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.footer-bottom p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-/* gaming Accessories */
-.main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-}
-
-.gadgets-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.gadgets-card {
-    flex-basis: calc(25% - 20px);
-    margin-bottom: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 5PX;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.gadgets-card:hover {
-    transform: translate(5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.gadgets-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: calc(15% - 20PX);
-}
-
-.div-2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.gadgets-card h3 {
-    margin: 15px;
-    color: aliceblue;
-}
-
-.gadgets-card p {
-    margin: 15px;
-    font-size: large;
-    color: rgb(135, 126, 126);
-}
-
-.sec {
-    background-color: rgb(56, 53, 53);
-}
 
 /* 320px — 480px: Mobile devices. */
+
 @media (min-width: 320px) and (max-width: 540px) {
     .game-list {
         flex-direction: column;
     }
 }
 
+
 @media screen and (max-width: 768px) {
-    .gadgets-card {
-        flex-basis: calc(50% - 20px);
-    }
-
-    .footer-container {
-        flex-direction: column;
-        padding: 30px 0;
-    }
-
-    .footer-col {
-        flex-basis: 50%;
-        text-align: center;
-    }
-
-    .floating-action {
-        padding: 10px;
-        right: 10px;
-        bottom: 10px;
-
-    }
-
-    .hiring .container {
-        display: flex;
-        flex-direction: column;
-    }
-
     .game-card {
         flex-basis: calc(50% - 20px);
     }
-
     .checkbtn {
         display: flex;
         align-items: center;
@@ -476,22 +234,101 @@ footer {
     #check:checked~ul {
         left: 0;
     }
-
-    #check:checked~.checkbtn .line1 {
+    
+    #check:checked ~ .checkbtn .line1 {
         stroke-dasharray: 90 207;
         stroke-dashoffset: -134;
         stroke-width: 5;
     }
 
-    #check:checked~.checkbtn .line2 {
+    #check:checked ~ .checkbtn .line2 {
         stroke-dasharray: 1 60;
         stroke-dashoffset: -30;
         stroke-width: 5;
     }
 
-    #check:checked~.checkbtn .line3 {
+    #check:checked ~ .checkbtn .line3 {
         stroke-dasharray: 90 207;
         stroke-dashoffset: -134;
         stroke-width: 5;
     }
 }
+/* gaming Accessories */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.sec{
+    background: linear-gradient();
+}
+    .main-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    .gadgets-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .gadgets-card{
+        flex-basis: calc(25% - 20px);
+        margin-bottom: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5PX;
+        overflow: hidden;
+        transition: all 0.3s ease;  
+    }
+    .gadgets-card:hover {
+        transform: translate(5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .gadgets-card img{
+        width: 100%;
+        height: 200px;
+        object-fit: calc(15% - 20PX);
+    }
+    @media (max-width: 768px)  {
+      .gadgets-card{
+        flex-basis: calc(50% - 20px);
+      }  
+    }
+    .btn-view-all {
+        text-decoration: none;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid rgba(37, 37, 37, 0.212);
+        color: rgb(251, 248, 248);
+        transition: all 0.3s ease;
+    
+    }
+    
+    .btn-view-all:hover {
+        background-color: black;
+        color: white;
+        transform: translate(5px);
+    }
+    .div-2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    h3{
+        margin: 15px;
+        color: aliceblue;
+    }
+    p{
+        margin: 15px;
+        font-size: large;
+        color: rgb(135, 126, 126);
+    }
+    .sec{
+        background-color: rgb(56, 53, 53);
+    }
+    .heading{
+        color: aliceblue;
+    }
