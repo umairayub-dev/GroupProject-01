@@ -7,6 +7,11 @@
     outline: none;
 }
 
+body,
+html {
+    height: 100%;
+}
+
 body {
     background-color: rgb(230, 230, 230);
     font-family: "Poppins", sans-serif;
@@ -14,8 +19,8 @@ body {
 
 header {
     border: 1px solid rgba(255, 255, 255, 0.048);
-    background-color: rgba(255, 255, 255, 0.062);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.10);
+    background-color: rgba(63, 63, 63, 0.178);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.267);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -31,9 +36,11 @@ header {
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
 .navbar_logo a {
     font-size: 2rem;
     font-weight: bold;
@@ -73,8 +80,10 @@ section {
 
 .hero {
     background-image: url('./images/playpro.jpg');
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -139,6 +148,7 @@ section {
     color: white;
     transform: translate(5px);
 }
+
 .game-list {
     display: flex;
     flex-wrap: wrap;
@@ -177,11 +187,8 @@ section {
 }
 
 .hiring_content {
-    -ms-flex: 1 1 50%;
     flex: 1 1 50%;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
     align-items: center
 }
 
@@ -189,7 +196,6 @@ section {
     max-width: 620px;
     margin: 0 auto;
     text-align: center;
-    -ms-flex-positive: 1;
     flex-grow: 1;
     padding: 80px 16px 0
 }
@@ -203,7 +209,6 @@ section {
 }
 
 .hiring_jobs {
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 40px
 }
@@ -211,11 +216,10 @@ section {
 .hiring_jobs_count {
     display: block;
     position: relative;
-    -ms-flex: 1 1 260px;
     flex: 1 1 260px;
     padding: 16px;
     text-align: center;
-    background-color: rgba(173,172,170,.2);
+    background-color: rgba(173, 172, 170, .2);
     border-radius: 8px;
     font-size: 1.125rem;
     line-height: 1.2;
@@ -231,15 +235,14 @@ section {
 }
 
 .hiring_image {
-    -ms-flex: 1 1 55%;
     flex: 1 1 55%;
 }
 
-.hiring_image img,.hiring_image picture {
+.hiring_image img,
+.hiring_image picture {
     width: 100%;
     height: 100%;
     max-height: 600px;
-    -o-object-fit: cover;
     object-fit: cover
 }
 
@@ -252,22 +255,24 @@ section {
     padding: 15px;
     color: #fff;
 }
+
 @media screen and (min-width: 960px) {
     .hiring_image {
-        -webkit-clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);
-        clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);
+        -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     }
+
     .hiring {
-            display:-ms-flexbox;
-            display: flex;
+        display: flex;
     }
 
     .hiring_content-inner {
-        margin:0 0 0 auto;
+        margin: 0 0 0 auto;
         padding: 80px 30px
     }
+
     .hiring_jobs_count {
-        font-size:1.563rem;
+        font-size: 1.563rem;
         padding: 20px
     }
 
@@ -297,15 +302,15 @@ footer {
     margin-bottom: 30px;
 }
 
-
 .footer-col h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
 .footer-col ul {
-    padding: 0 20px;
+    padding: 0;
 }
+
 .footer-col ul li a {
     color: #e2e2e2;
 }
@@ -321,74 +326,65 @@ footer {
 .footer-bottom p {
     margin: 0;
     font-size: 0.9rem;
-}    
+}
 
 /* gaming Accessories */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
 }
-.sec{
-    background: linear-gradient();
-}
-    .main-container{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 40px;
-    }
-    .gadgets-list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
-    .gadgets-card{
-        flex-basis: calc(25% - 20px);
-        margin-bottom: 40px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        border-radius: 5PX;
-        overflow: hidden;
-        transition: all 0.3s ease;  
-    }
-    .gadgets-card:hover {
-        transform: translate(5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-    .gadgets-card img{
-        width: 100%;
-        height: 200px;
-        object-fit: calc(15% - 20PX);
-    }
-    @media (max-width: 768px)  {
-      .gadgets-card{
-        flex-basis: calc(50% - 20px);
-      }  
-    }
-    .div-2 {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-    }
-    h3{
-        margin: 15px;
-        color: aliceblue;
-    }
-    p{
-        margin: 15px;
-        font-size: large;
-        color: rgb(135, 126, 126);
-    }
-    .sec{
-        background-color: rgb(56, 53, 53);
-    }
-    .heading{
-        color: black;
-    }
-/* 320px — 480px: Mobile devices. */
 
+.gadgets-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.gadgets-card {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5PX;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.gadgets-card:hover {
+    transform: translate(5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gadgets-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: calc(15% - 20PX);
+}
+
+.div-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.gadgets-card h3 {
+    margin: 15px;
+    color: aliceblue;
+}
+
+.gadgets-card p {
+    margin: 15px;
+    font-size: large;
+    color: rgb(135, 126, 126);
+}
+
+.sec {
+    background-color: rgb(56, 53, 53);
+}
+
+/* 320px — 480px: Mobile devices. */
 @media (min-width: 320px) and (max-width: 540px) {
     .game-list {
         flex-direction: column;
@@ -396,19 +392,36 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .gadgets-card {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .footer-col {
+        flex-basis: 50%;
+        text-align: center;
+    }
+
     .floating-action {
         padding: 10px;
         right: 10px;
         bottom: 10px;
 
     }
-    .hiring .container{
+
+    .hiring .container {
         display: flex;
         flex-direction: column;
     }
+
     .game-card {
         flex-basis: calc(50% - 20px);
     }
+
     .checkbtn {
         display: flex;
         align-items: center;
@@ -463,20 +476,20 @@ footer {
     #check:checked~ul {
         left: 0;
     }
-    
-    #check:checked ~ .checkbtn .line1 {
+
+    #check:checked~.checkbtn .line1 {
         stroke-dasharray: 90 207;
         stroke-dashoffset: -134;
         stroke-width: 5;
     }
 
-    #check:checked ~ .checkbtn .line2 {
+    #check:checked~.checkbtn .line2 {
         stroke-dasharray: 1 60;
         stroke-dashoffset: -30;
         stroke-width: 5;
     }
 
-    #check:checked ~ .checkbtn .line3 {
+    #check:checked~.checkbtn .line3 {
         stroke-dasharray: 90 207;
         stroke-dashoffset: -134;
         stroke-width: 5;
