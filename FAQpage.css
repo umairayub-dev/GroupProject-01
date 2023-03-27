@@ -6,7 +6,14 @@
     box-sizing: border-box;
     outline: none;
 }
+body,html {
+    height: 100%;
+}
 
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: "Poppins", sans-serif;
+}
 /* header starts here */
 
 header {
@@ -63,15 +70,6 @@ a {
 
 #check {
     display: none;
-}
-
-/* header ends here */
-
-body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(230, 230, 230);
 }
 
 .container {
@@ -173,9 +171,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .gadgets-card {
-        flex-basis: calc(50% - 20px);
-    }
 
     .footer-container {
         flex-direction: column;
@@ -191,17 +186,8 @@ footer {
         padding: 10px;
         right: 10px;
         bottom: 10px;
-
-    }
-
-    .hiring .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .game-card {
-        flex-basis: calc(50% - 20px);
-    }
+     }
+    
 
     .checkbtn {
         display: flex;
